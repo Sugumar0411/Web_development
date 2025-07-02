@@ -3,50 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Form </title>
 </head>
-<body> 
-    <center>
-    <form action ="/submit" method="post">
-        <label for="name">Name:</label> 
-        <input type="text" id="name" name=""name" placeholder="Enter your name"><br><br>
+<body>
+    <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="enter your name" required><br><br>
 
-        <lable for="email">Email:</lable>
-        <input type="email" id="email" name"email" placeholder="Enter your mail id" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"placeholder="enter tour email" required><br><br>
 
-        <lable for="dob">Date of birth:</lable>
+        <label for="dob">Date Of Birth</label>
         <input type="date" id="dob" name="dob" required><br><br>
 
-        <lable for="appointment">Appointment Date&Time:</lable>
-        <input type="datetime-local" id="date-time"><br><br>
+        <label for="appointment">Appointment Date & Time:</label><br>
+        <input type="datetime-local" id="appointment"><br><br>
 
-        <lable for="billing-month"> Billing month: </lable>
-        <input type="month" id="Billing-month" name ="Billing-month"><br><br>
+        <label for="billing-month">Billing-month:</label><br>
+        <input type="month" id="billing-month"name="billing-month"><br><br>
 
-        <lable for="week"-number">Select week:</lable>
-        <input type="week" id="week-member" name="week-number"<br><br>
+        <label for="week-number">Select Week:</label><br>
+        <input type="week" id="week-number"name="week-number"><br><br>
 
         <p><strong>Gender:</strong></p>
-        <input type="gender" id="Gender" name="Gender"<br><br>
-        
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label>
+   
+        <input type="radio" id="female" name="gender">
+        <label for="Female">Female</label>
 
+        <input type="radio" id="other" name="gender">
+        <label for="other">Other:</label>
 
+        <p><strong>Hobbies:</strong></p>
+        <input type="checkbox" id="reading" name="hobbies[]" value="Reading">
+        <label for="reading">Reading</label><br>
 
-         <form action="/upolde" method="post">
+        <input type="checkbox" id="sports" name="hobbies[]" value="Sports">
+        <label for="travel">Sports</label><br>
 
-        <lable for="file">Choose a file</lable><br>
-        
+        <input type="checkbox" id="travel" name="hobbies[]" value="Travel">
+        <label for="travel">Travel</label><br>
 
-        <button type="submit">Upload</button
-        
-        <input type="submit" value="submit"
+        <input type="checkbox" id="music" name="hobbies[]" value="Music">
+        <label for="music">Music</label><br>
 
-
-
-         
-
+        <input type="submit" value="Submit">
 
     </form>
-    </center>
 </body>
 </html>
