@@ -1,0 +1,21 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body,
+.container
+{
+    mai-height: 100vh;
+    background-color: aliceblue;
+
+}
+.container{
+    display: flex;
+
+}
+header{
+    flex:1;
+    border: 2px solid red;
+}
